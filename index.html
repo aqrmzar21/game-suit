@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Suit DOM</title>
+  <link rel="stylesheet" href="suit.css"><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- <h3 for="judul">Island World DOM</h3>
+  <input type="input" name="kolom1" id="inputSuit" autofocus> -->
+<div class="game-container">
+  <h1 class="game-title">GAME SUIT</h1>
+
+  <div class="score-board">
+    <div id="user-score" class="score-item">
+      <p>KAMU</p>
+      <span id="user-score-value">0</span>
+    </div>
+    <div id="com-score" class="score-item">
+      <p>COM</p>
+      <span id="com-score-value">0</span>
+    </div>
+  </div>
+
+  <div class="game-area">
+    <div class="player-area user-area">
+      <p>YOUR CHOICE</p>
+      <div id="user-choice-display" class="choice-display">?</div>
+    </div>
+
+    <div class="result-area">
+      <span id="result-text">Ayo Main!</span>
+    </div>
+    <div class="result-lagi">
+      <button id="tampil" class="choice-btn">Main Lagi</button>
+    </div>
+    
+    <div class="player-area com-area">
+      <p>COM CHOICE</p>
+      <div id="com-choice-display" class="choice-display">?</div>
+    </div>
+  </div>
+
+  <div class="choices-buttons">
+    <button class="choice-btn" id="kertas" value="kertas">
+    <!-- <button id="paper" class="choice-btn" data-choice="kertas"> -->
+      <img src="https://img.icons8.com/ios-filled/50/000000/paper.png" alt="Kertas" width="10">
+      <span>KERTAS</span>
+    </button>
+    <button class="choice-btn" id="batu" value="batu">
+    <!-- <button id="rock" class="choice-btn" data-choice="batu"> -->
+      <!-- <img src="https://img.icons8.com/ios-filled/50/000000/rock.png" alt="Batu"> -->
+      <span>🪨 BATU</span>
+    </button>
+    <button class="choice-btn" id="gunting" value="gunting">
+    <!-- <button id="scissors" class="choice-btn" data-choice="gunting"> -->
+      <img src="https://img.icons8.com/ios-filled/50/000000/scissors.png" alt="Gunting" width="10">
+      <span>GUNTING</span>
+    </button>
+  </div>
+</div>
+
+  <!-- <script src="script.js"></script> -->
+  <script src="game.js"></script>
+</body>
+</html>
